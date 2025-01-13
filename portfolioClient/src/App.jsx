@@ -4,7 +4,7 @@ import './assets/styles/sectionStyles.css'
 import DeveloperCard from './sections/DeveloperCard'
 import BlogDetails from './sections/BlogDetails'
 import ProjectsPage from './pages/ProjectsPage'
-import ExperiencePage from './pages/experiencePage'
+import ExperiencePage from './pages/ExperiencePage'
 import SkillsPage from './pages/SkillsPage'
 
 function App() {
