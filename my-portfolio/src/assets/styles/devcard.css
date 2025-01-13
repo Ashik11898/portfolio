@@ -1,0 +1,28 @@
+.devcard-parent{
+    background-color: #fff;
+    width: 340px;
+    height: 640px;
+    position: fixed;
+    padding: 30px 50px;
+    border-radius: 20px;
+    color: #000;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.devcard-image{
+    height: 284px;
+    background-color: #F46C38;
+    border-radius: 16px;
+}
+.dev-name{font-weight: 700;  font-size: clamp(16px, 5vw, 25px);margin: 25px 0;}
+.dev-content{margin: 50px 0 ;font-size: clamp(16px, 5vw, 20px)}
+
+.dev-links{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    color:#F46C38;
+    margin-top: 30px;
+}
