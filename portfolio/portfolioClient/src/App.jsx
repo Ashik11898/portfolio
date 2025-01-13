@@ -6,6 +6,7 @@ import BlogDetails from './sections/BlogDetails'
 import ProjectsPage from './pages/ProjectsPage'
 import ExperiencePage from './pages/ExperiencePage'
 import SkillsPage from './pages/SkillsPage'
+import FormPage from './pages/FormPage'
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
             <SkillsPage/>
             <ProjectsPage/>
             <ExperiencePage/>
-           
+            <FormPage/>
           </div> 
         </div>
       </div>

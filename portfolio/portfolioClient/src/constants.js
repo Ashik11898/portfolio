@@ -122,5 +122,10 @@ export const RESUME_JSON= {
         "role":["React Developer","Web Developer","Frontend Developer","Full stack Developer","MERN Stack developer"],
         "role_heading":["Expert React js & MERN Stack Developer: Crafting Scalable Frontends and Robust Backends for Dynamic Web Solutions."]
     }
-  }
+}
+export const FIELDS=[
+  {id:1,type:"text",placeholder:"Your Name",label:"Name",required:"true"},
+  {id:2,type:"email",placeholder:"Your@email.com",label:"Email",required:"true"},
+
+]
   
