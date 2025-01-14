@@ -1,28 +1,48 @@
 .devcard-parent{
-    background-color: #fff;
+    background: var(--theme-color-light);
     width: 340px;
     height: 640px;
     position: fixed;
     padding: 30px 50px;
     border-radius: 20px;
-    color: #000;
+    color: var(--app-bgcolor);
     box-sizing: border-box;
     text-align: center;
 
 }
+.devcard-parent::before{
+    content:"";
+    background:  url("../svg/card1.svg") no-repeat 0 0;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 125px;
+    top: 0
+}
+
+.devcard-parent::after{
+    content:"";
+    background:  url("../svg/card2.svg") no-repeat 0 0;
+    position: absolute;
+    left: -16px;
+    width: 200px;
+    height: 125px;
+    top: 340px;
+}
 
 .devcard-image{
+    
     height: 284px;
-    background-color: #F46C38;
+    background-color: var(--theme-color-contrast);
     border-radius: 16px;
 }
 .dev-name{font-weight: 700;  font-size: clamp(16px, 5vw, 25px);margin: 25px 0;}
-.dev-content{margin: 50px 0 ;font-size: clamp(16px, 5vw, 20px)}
+.dev-content{margin: 65px 0 50px;font-size: clamp(16px, 5vw, 20px)}
 
 .dev-links{
     display: flex;
     font-size: 20px;
     justify-content: space-around;
-    color:#F46C38;
+    color:var(--theme-color-contrast);
     margin-top: 30px;
 }

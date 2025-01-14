@@ -2,7 +2,7 @@ export const RESUME_JSON= {
     "technical_skills": [
       "HTML5", "CSS3", "JAVASCRIPT", "jquery","TYPESCRIPT", "PHP", "NODE JS","Express js", "Mongo DB", "BOOTSTRAP", "MUI", "SCSS","tailwind css", 
         "REACT JS", "REDUX", "REACT QUERY","NEXT JS", "REST API", "GIT", 
-       , "Responsive Web Design",
+       , "Responsive Web Design","Figma"
     ],
     "experience": [
       {
@@ -118,8 +118,14 @@ export const RESUME_JSON= {
     "personal":{
         "name":"MOHAMED ASHIK",
         "experience":"5.4",
+        "one_line":"Building Seamless Frontends & Robust Backends with Modern JavaScript Technologies",
         "role":["React Developer","Web Developer","Frontend Developer","Full stack Developer","MERN Stack developer"],
         "role_heading":["Expert React js & MERN Stack Developer: Crafting Scalable Frontends and Robust Backends for Dynamic Web Solutions."]
     }
-  }
+}
+export const FIELDS=[
+  {id:1,type:"text",placeholder:"Your Name",label:"Name",required:"true"},
+  {id:2,type:"email",placeholder:"Your@email.com",label:"Email",required:"true"},
+
+]
   

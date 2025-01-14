@@ -1,16 +1,26 @@
+:root {
+  --cardBackground-color: #202020;
+  --cardDarkText-color: #D3D3D3;
+  --theme-color-light: #fff;
+  --theme-color-contrast: #F46C38;
+  --theme-color-contrast2: #c5ff41;
+  --app-bgcolor: #000;
+
+  
+}
 
 
 .app-parent{
-  background-color: #000;
+  background-color: var(--app-bgcolor);
   margin: 0;
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: var(--theme-color-light);
   top:0;
   left:0;
-  padding: 0px 10px 10px;
+  padding: 0px 10px 150px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: normal;
@@ -31,10 +41,20 @@ img{
   margin-top: 150px;
 }
 
+input{
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: var(--app-bgcolor);
+  padding: 10px;
+  box-sizing: border-box;
+}
 /* global css starts*/
 
 .load-pages{
-  max-width: 1150px;
+  max-width: 1200px;
 }
 
 .home-block{
@@ -61,25 +81,28 @@ img{
 }
 .role-name >P{margin: 0;}
 .role-name >P:nth-child(2){
-  color:#F46C38;
+  color:var(--theme-color-contrast);
 }
 
 /* role summary */
 .role-summary{
     font-size: clamp(1rem, 2.5vw, 1.5rem);
-    color: #FFFFF0;
+    color: var(--cardDarkText-color);
     margin-top: 20px;
 }
 
 
 /* list-card */
-
+.project-list-parent{
+  background-color: var(--cardBackground-color);
+  border-radius: 16px;
+}
 .list-card{
   margin-top: 50px;
   display: grid;
   gap: 20px;
   grid-template-columns: 30% 70%;
-  background-color: #505050;
+  background-color: var(--cardBackground-color);
   border-radius: 16px;
   padding: 20px;
   box-sizing: border-box;
@@ -90,8 +113,27 @@ img{
 
 .list-image-block{
   width: 100%;
-
 }
+.list-text-block p{
+  font-size: 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+.list-text-block p:nth-child(1) span{
+  /* background: #F46C38; */
+  /* width: fit-content;*/
+  color: var(--theme-color-contrast); 
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.list-text-block p:nth-child(2){
+  background: var(--theme-color-contrast2);
+  width: fit-content;
+  padding: 10px;
+  color: #000;
+}
+
 .list-image-block img{
   width: 100%;
   height: 100%;
@@ -104,29 +146,32 @@ img{
 
 .experince-parent{
   margin: 35px 0 0px 0;
-  background-color: #F8F8F8;
   padding: 20px;
   border-radius: 16px;
-  color: #000;
+  color: var(--cardDarkText-color);
   font-size: 20px;
+  border-bottom: 0.5px solid var(--theme-color-contrast);
 
 }
 
-.experince-box{
-  display: flex;
-  justify-content: space-between;
-  
+
+.experince-company{
+  width: fit-content;
+  background: var(--theme-color-contrast2);
+  color:var(--app-bgcolor);
+  padding:8px;
+  box-sizing: border-box;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
-.tech-list{
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 5px;
-  margin-top: 10px;
+.experince-role{
+  color: var(--theme-color-contrast);
+  font-weight: 500;
 }
 
 /* skill-block */
 .skill-block{
-  background-color: #505050;
+  background-color: var(--cardBackground-color);
   padding: 25px;
   border-radius: 16px;
   display: flex;
@@ -137,9 +182,33 @@ img{
 .skill-item{
   width: fit-content;
   padding: 10px;
-  background-color:#c5ff41;
+  background-color:var(--theme-color-contrast2);
   color: #000;
   font-weight: 500;
   border-radius: 20px;
   text-transform: uppercase;
+}
+
+/* form-box */
+.form-box{
+  display: grid;
+  grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+  gap: 20px;
+}
+
+textarea{
+  width: 100%;
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.submit-btn{
+  background-color: var(--theme-color-contrast);
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 21px;
+  color: var(--theme-color-light);
 }

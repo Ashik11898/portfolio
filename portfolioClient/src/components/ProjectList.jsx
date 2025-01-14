@@ -11,16 +11,16 @@ const ProjectList = ({data,isExperience}) => {
     
     
   return (
-    <div>
+    <div className={isExperience ? "project-list-parent":""}>
         {data.slice(0, 3).map((list, id) =>
             !isExperience ? (
             <div key={list.company + id} className="list-card">
                 <div className="list-image-block"><img src={images[id]} alt="project-image" /></div>
-                <div>
-                    <p>{list.projects[0].name}</p>
+                <div className='list-text-block'>
+                    <p>Project :- <span>{list.projects[0].name}</span></p>
                     <p>{list.company}</p>
                     <p>{list.location}</p>
-                    <button>Show More</button>
+                    {/* <button>Show More</button> */}
                 </div>
             </div>
             ) : <ContentList data={list}/>

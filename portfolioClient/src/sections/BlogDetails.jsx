@@ -16,8 +16,8 @@ const BlogDetails = () => {
             <div>+20<p>WORLDWIDE CLIENTS</p></div>
         </div>
         <div className='blog-box'>
-            <div className='blog-box-left centerCss'>Recent Projects</div>
-            <div className='blog-box-right centerCss'>Experience</div>
+            <div className='blog-box-left centerCss'></div>
+            <div className='blog-box-right centerCss'></div>
         </div>
         
     </div>
