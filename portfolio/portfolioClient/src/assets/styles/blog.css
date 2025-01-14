@@ -8,7 +8,7 @@
 .experience-parent{margin-top: 50px;}
 .experience-box{display: flex;justify-content: space-between;}
 .experience-box >div{font-size: 70px;font-weight: 900;}
-.experience-box >div >p{font-size: clamp(1rem, 2.5vw, 1rem);font-weight: 700;color:#505050;}
+.experience-box >div >p{font-size: clamp(1rem, 2.5vw, 1rem);font-weight: 700;color:var(--cardDarkText-color);}
 
 .blog-box{
     display: grid;
@@ -18,5 +18,5 @@
     margin-top: 50px;
     
 }
-.blog-box-left{border-radius: 15px; background: #F46C38 url("../svg/lines1.svg");}
-.blog-box-right{border-radius: 15px;background: #c5ff41 url("../svg/lines2.svg");}
+.blog-box-left{border-radius: 15px; background: var(--theme-color-contrast) url("../svg/lines1.svg");}
+.blog-box-right{border-radius: 15px;background: var(--theme-color-contrast2) url("../svg/lines2.svg");}

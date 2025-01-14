@@ -11,7 +11,7 @@ const ProjectList = ({data,isExperience}) => {
     
     
   return (
-    <div>
+    <div className={isExperience ? "project-list-parent":""}>
         {data.slice(0, 3).map((list, id) =>
             !isExperience ? (
             <div key={list.company + id} className="list-card">
