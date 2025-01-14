@@ -1,4 +1,4 @@
-.devcard-parent{
+.devcard-parent {
     background: var(--theme-color-light);
     width: 340px;
     height: 640px;
@@ -8,41 +8,81 @@
     color: var(--app-bgcolor);
     box-sizing: border-box;
     text-align: center;
-
-}
-.devcard-parent::before{
-    content:"";
-    background:  url("../svg/card1.svg") no-repeat 0 0;
+    animation: bounceIn 1s ease-out;
+  }
+  
+  .devcard-parent::before {
+    content: "";
+    background: url("../svg/card1.svg") no-repeat 0 0;
     position: absolute;
     left: 0;
     width: 200px;
     height: 125px;
-    top: 0
-}
-
-.devcard-parent::after{
-    content:"";
-    background:  url("../svg/card2.svg") no-repeat 0 0;
+    top: 0;
+  }
+  
+  .devcard-parent::after {
+    content: "";
+    background: url("../svg/card2.svg") no-repeat 0 0;
     position: absolute;
     left: -16px;
     width: 200px;
     height: 125px;
     top: 340px;
-}
-
-.devcard-image{
-    
+  }
+  
+  /* Animation for the .devcard-image */
+  .devcard-image {
     height: 284px;
     background-color: var(--theme-color-contrast);
     border-radius: 16px;
-}
-.dev-name{font-weight: 700;  font-size: clamp(16px, 5vw, 25px);margin: 25px 0;}
-.dev-content{margin: 65px 0 50px;font-size: clamp(16px, 5vw, 20px)}
-
-.dev-links{
+    animation: fadeIn 1s ease-out 0.5s forwards;
+  }
+  
+  .dev-name {
+    font-weight: 700;
+    font-size: clamp(16px, 5vw, 25px);
+    margin: 25px 0;
+    animation: fadeIn 1s ease-out 1s forwards;
+  }
+  
+  .dev-content {
+    margin: 65px 0 50px;
+    font-size: clamp(16px, 5vw, 20px);
+    animation: fadeIn 1s ease-out 1.5s forwards;
+  }
+  
+  .dev-links {
     display: flex;
     font-size: 20px;
     justify-content: space-around;
-    color:var(--theme-color-contrast);
+    color: var(--theme-color-contrast);
     margin-top: 30px;
-}
+    animation: fadeIn 1s ease-out 2s forwards;
+  }
+  
+  /* Bounce-in animation */
+  @keyframes bounceIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

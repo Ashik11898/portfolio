@@ -8,10 +8,10 @@ const ProjectsPage = () => {
     const list = RESUME_JSON.experience
     
   return (
-    <div className='section-space'>
+    <>
         <TitleComponent text={HEADING}/>
         <ProjectList data={list}/>
-    </div>
+    </>
   )
 }
 

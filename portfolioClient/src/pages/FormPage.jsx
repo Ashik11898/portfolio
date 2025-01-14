@@ -7,10 +7,10 @@ const FormPage = () => {
     const HEADING = ["LET'S WORK", "TOGETHER"]
 
   return (
-    <div className='section-space'>
+    <>
         <TitleComponent text={HEADING}/>
-        <Form list={FIELDS}/>
-    </div>
+        <div style={{marginTop:"50px"}}><Form list={FIELDS}/></div>
+    </>
   )
 }
 

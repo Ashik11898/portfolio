@@ -5,8 +5,6 @@
   --theme-color-contrast: #F46C38;
   --theme-color-contrast2: #c5ff41;
   --app-bgcolor: #000;
-
-  
 }
 
 
@@ -67,6 +65,20 @@ input{
   margin-left: 440px;
 }
 
+.section:nth-child(1){
+  margin-top: 0px;
+}
+
+.left-container .section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease; /* Increased duration to 1 second */
+}
+
+.left-container .section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -82,33 +94,46 @@ input{
 .role-name >P{margin: 0;}
 .role-name >P:nth-child(2){
   color:var(--theme-color-contrast);
+  line-height: 70px;
 }
 
 /* role summary */
 .role-summary{
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     color: var(--cardDarkText-color);
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 
 /* list-card */
 .project-list-parent{
-  background-color: var(--cardBackground-color);
+  /* background-color: var(--cardBackground-color); */
   border-radius: 16px;
+ 
 }
+
+
+
+
+
 .list-card{
   margin-top: 50px;
   display: grid;
   gap: 20px;
-  grid-template-columns: 30% 70%;
-  background-color: var(--cardBackground-color);
+  grid-template-columns: 36% 65%;
+  width: 600px;
   border-radius: 16px;
   padding: 20px;
   box-sizing: border-box;
   font-size: 18px;
   font-weight: 600;
   position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-card:hover {
+  background-color: var(--cardBackground-color);
 }
 
 .list-image-block{
@@ -158,8 +183,12 @@ height: 150px;
   border-radius: 16px;
   color: var(--cardDarkText-color);
   font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+.experince-parent:hover{
+  background-color: var(--cardBackground-color);
+}
 
 .experince-company{
   width: fit-content;
@@ -195,10 +224,17 @@ height: 150px;
   width: fit-content;
   padding: 10px;
   background-color:var(--theme-color-contrast2);
-  color: #000;
+  color: var(--app-bgcolor);
   font-weight: 500;
   border-radius: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-item:hover{
+  background-color:var(--theme-color-contrast);
+  color: var(--theme-color-light);
 }
 
 /* form-box */

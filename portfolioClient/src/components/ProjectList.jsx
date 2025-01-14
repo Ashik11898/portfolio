@@ -14,7 +14,7 @@ const ProjectList = ({data,isExperience}) => {
     <div className={isExperience ? "project-list-parent":""}>
         {data.slice(0, 3).map((list, id) =>
             !isExperience ? (
-            <div key={list.company + id} className="list-card">
+            <div key={id} className="list-card ">
                 <div className="list-image-block"><img src={images[id]} alt="project-image" /></div>
                 <div className='list-text-block'>
                     <p><span>{list.projects[0].name}</span></p>
@@ -23,7 +23,7 @@ const ProjectList = ({data,isExperience}) => {
                     {/* <button>Show More</button> */}
                 </div>
             </div>
-            ) : <ContentList data={list}/>
+            ) : <ContentList data={list} key={id}/>
         )}
     </div>
 

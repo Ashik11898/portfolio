@@ -7,10 +7,10 @@ const ExperiencePage = () => {
   const HEADING = ["5.4 years of", "Experience"]
  const list = RESUME_JSON.experience
   return (
-    <div className='section-space'>
+    <>
         <TitleComponent text={HEADING} />
         <ProjectList data={list} isExperience/>
-    </div>
+    </>
   )
 }
 

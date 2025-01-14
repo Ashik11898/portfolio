@@ -120,12 +120,12 @@ export const RESUME_JSON= {
         "experience":"5.4",
         "one_line":"Building Seamless Frontends & Robust Backends with Modern JavaScript Technologies",
         "role":["React Developer","Web Developer","Frontend Developer","Full stack Developer","MERN Stack developer"],
-        "role_heading":["Expert React js & MERN Stack Developer: Crafting Scalable Frontends and Robust Backends for Dynamic Web Solutions."]
+        "role_heading":["Expert React & MERN Stack Developer: Crafting Scalable Frontend and Robust Backend for Dynamic Web Solutions."]
     }
 }
 export const FIELDS=[
-  {id:1,type:"text",placeholder:"Your Name",label:"Name",required:"true"},
-  {id:2,type:"email",placeholder:"Your@email.com",label:"Email",required:"true"},
+  {id:1,type:"text",placeholder:"Your Name",label:"Name",required:true},
+  {id:2,type:"email",placeholder:"Your@email.com",label:"Email",required:true},
 
 ]
   

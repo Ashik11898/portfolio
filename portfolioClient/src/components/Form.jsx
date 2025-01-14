@@ -6,9 +6,9 @@ const Form = ({list}) => {
         <div className='form-box'>
             {
                 list.map((data)=>(
-                    <div >
+                    <div key={data.id}>
                         <p>{data.label}</p>
-                        <input type={data.type} placeholder={data.placeholder} required={data.required} />
+                        <input {...data} />
                     </div>
                 ))
             }
