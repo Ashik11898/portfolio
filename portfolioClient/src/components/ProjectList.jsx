@@ -17,7 +17,7 @@ const ProjectList = ({data,isExperience}) => {
             <div key={list.company + id} className="list-card">
                 <div className="list-image-block"><img src={images[id]} alt="project-image" /></div>
                 <div className='list-text-block'>
-                    <p>Project :- <span>{list.projects[0].name}</span></p>
+                    <p><span>{list.projects[0].name}</span></p>
                     <p>{list.company}</p>
                     <p>{list.location}</p>
                     {/* <button>Show More</button> */}

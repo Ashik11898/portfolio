@@ -10,8 +10,8 @@ const ContentList = ({data}) => {
     <div className='experince-parent'>
         <div className='experince-company'>{company}</div>
         <div className='experince-role'>{role}</div>
-        <ul>{allResponsibility.map((data, index) => (<li key={index}>{data}</li>))}</ul>
-        <div style={{marginTop:"10px"}}>{duration} - <b>{location}</b></div> 
+        <ul className='experince-list'>{allResponsibility.map((data, index) => (<li key={index}>{data}</li>))}</ul>
+        <div className='working-period'>{duration} - <b>{location}</b></div> 
         {/* <>
             <b>Technologies</b>
             <div className='tech-list'>{allTechnologies.map((data, index) => (<div key={index} >{data},</div>))}</div>

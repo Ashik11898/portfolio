@@ -116,22 +116,30 @@ input{
 }
 .list-text-block p{
   font-size: 20px;
-  margin: 20px 0;
+  margin: 0px 0 10px;
   box-sizing: border-box;
 }
 .list-text-block p:nth-child(1) span{
   /* background: #F46C38; */
   /* width: fit-content;*/
-  color: var(--theme-color-contrast); 
-  font-size: 25px;
+  color: var(--theme-color-light);  
+  font-size: 22px;
   letter-spacing: 2px;
 }
 
 .list-text-block p:nth-child(2){
-  background: var(--theme-color-contrast2);
+  /* background: var(--theme-color-contrast2); */
   width: fit-content;
-  padding: 10px;
-  color: #000;
+  /* padding: 10px; */
+  color: var(--theme-color-contrast);
+}
+
+.list-text-block p:nth-child(3){
+  text-transform: uppercase;
+}
+
+.list-image-block{
+height: 150px;
 }
 
 .list-image-block img{
@@ -150,23 +158,27 @@ input{
   border-radius: 16px;
   color: var(--cardDarkText-color);
   font-size: 20px;
-  border-bottom: 0.5px solid var(--theme-color-contrast);
-
 }
 
 
 .experince-company{
   width: fit-content;
-  background: var(--theme-color-contrast2);
-  color:var(--app-bgcolor);
-  padding:8px;
+  color:var(--theme-color-light);
   box-sizing: border-box;
   font-weight: 500;
   margin-bottom: 12px;
+  font-size: 22px;
 }
 .experince-role{
   color: var(--theme-color-contrast);
   font-weight: 500;
+  text-transform:uppercase;
+} 
+
+
+
+.working-period > b{
+  text-transform:uppercase;
 }
 
 /* skill-block */
