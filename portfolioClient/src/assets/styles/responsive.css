@@ -99,8 +99,8 @@
 
 }
 
-@media screen and (min-height: 550px) and (max-height: 700px) {
-  
+@media screen and (min-height: 550px) and (max-height: 800px) {
+
   .devcard-parent {top: 20px;z-index: 99;height: 550px;}
   .devcard-parent::after {top: 276px;background-size: 180px;left: -13px;}
   .devcard-image {height: 215px;}
