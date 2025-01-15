@@ -23,8 +23,10 @@ function App() {
   const debounceTimeout = useRef(null);
 
   const handleScrollToSection = (id) => {
-   
+    alert(id)
     const section = sectionRefs.current.find((ref) => ref.id === id);
+    console.log("sec",section);
+    
     if (section) {
       const topOffset = section.offsetTop;
       const offset = 100;
@@ -38,41 +40,27 @@ function App() {
   };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const newVisibleSections = { ...visibleSections };
-
-        entries.forEach((entry) => {
-          newVisibleSections[entry.target.id] = entry.isIntersecting;
-        });
-
-        // Debounce state updates to prevent rapid triggering
-        if (debounceTimeout.current) clearTimeout(debounceTimeout.current);
-
-        debounceTimeout.current = setTimeout(() => {
-          setVisibleSections((prev) => {
-            if (JSON.stringify(prev) !== JSON.stringify(newVisibleSections)) {
-              return newVisibleSections;
-            }
-            return prev;
-          });
-        }, 50); // Adjust debounce duration as needed
-      },
-      {
-        threshold: 0.3, // Trigger when 70% of the section is visible
-        //rootMargin: "0px 0px -10% 0px", // Small root margin for smoother transitions
-      }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisibleSections((prev) => ({
+            ...prev,
+            [entry.target.id]: true,
+          }));
+        } else {
+          setVisibleSections((prev) => ({
+            ...prev,
+            [entry.target.id]: false,
+          }));
+        }
+      });
+    }, { threshold: 0.3 }); // Only trigger at 30% visibility
 
     sectionRefs.current.forEach((ref) => observer.observe(ref));
 
-    return () => {
-      if (debounceTimeout.current) clearTimeout(debounceTimeout.current);
-      observer.disconnect();
-    };
-  }, [visibleSections]);
+    return () => observer.disconnect();
+  }, []);
 
-console.log("visibleSections",visibleSections);
 
 
   return (
