@@ -33,7 +33,7 @@
   .dev-content{  margin: 30px 0 50px;  }
   .devcard-parent::after {
     background-size: 170px;
-    width: 170px;
+    width: 200px;
 
   }
 .dev-links{
