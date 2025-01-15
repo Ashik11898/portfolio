@@ -23,10 +23,13 @@ function App() {
   const debounceTimeout = useRef(null);
 
   const handleScrollToSection = (id) => {
+   
     const section = sectionRefs.current.find((ref) => ref.id === id);
     if (section) {
       const topOffset = section.offsetTop;
       const offset = 100;
+      console.log("top:",topOffset - offset);
+      
       window.scrollTo({
         top: topOffset - offset,
         behavior: "smooth",
@@ -53,7 +56,7 @@ function App() {
             }
             return prev;
           });
-        }, 100); // Adjust debounce duration as needed
+        }, 50); // Adjust debounce duration as needed
       },
       {
         threshold: 0.3, // Trigger when 70% of the section is visible
@@ -68,6 +71,9 @@ function App() {
       observer.disconnect();
     };
   }, [visibleSections]);
+
+console.log("visibleSections",visibleSections);
+
 
   return (
     <div className='app-parent'>
