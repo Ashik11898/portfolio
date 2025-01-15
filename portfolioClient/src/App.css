@@ -154,7 +154,7 @@ input{
 
 .list-text-block p:nth-child(2){
   /* background: var(--theme-color-contrast2); */
-  width: fit-content;
+/* width: fit-content; */
   /* padding: 10px; */
   color: var(--theme-color-contrast);
 }

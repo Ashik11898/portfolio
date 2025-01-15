@@ -1,0 +1,47 @@
+/* For screen widths between 1200px and 320px */
+@media (max-width: 1200px) and (min-width: 320px) {
+    /* Your styles for this range go here */
+      .app-parent{
+        padding: 0px 25px 150px 25px;
+      }
+
+    .devcard-parent  {
+      position: relative;
+      width: 100%;
+    }
+    .home-block{
+        display: unset;
+        float: left;
+    }
+    .load-pages {max-width: 100%;}
+    .blog-box {grid-template-columns: 1fr 1fr; /* Two equal columns */
+      gap: 20px; }
+
+    .left-container {
+      margin-left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .list-card {width: 100%;display: flex;flex-direction: column;}
+    .list-text-block{text-align: center;}
+   
+}
+
+@media (max-width: 500px) and (min-width: 320px) {
+
+  .blog-box {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .experience-box{
+    flex-direction: column;
+  }
+  .devcard-image {
+    height: 200px;
+  }
+}
+  
