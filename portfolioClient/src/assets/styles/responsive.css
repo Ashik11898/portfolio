@@ -63,7 +63,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}  .blog-box {
+}  
+.blog-parent{
+  margin-top: 60px;
+}
+
+.blog-box {
     grid-template-columns: 1fr;
     gap: 20px;
   }
