@@ -23,9 +23,7 @@ function App() {
   const debounceTimeout = useRef(null);
 
   const handleScrollToSection = (id) => {
-    alert(id)
     const section = sectionRefs.current.find((ref) => ref.id === id);
-    console.log("sec",section);
     
     if (section) {
       const topOffset = section.offsetTop;
