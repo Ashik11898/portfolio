@@ -35,9 +35,9 @@ img{
   align-items: center;
 }
 
-.section-space{
+/* .section-space{
   margin-top: 150px;
-}
+} */
 
 input{
   width: 100%;
@@ -63,6 +63,9 @@ input{
 .left-container{
   width: calc(100% - 440px);
   margin-left: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .section:nth-child(1){
@@ -71,13 +74,11 @@ input{
 
 .left-container .section {
   opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease; /* Increased duration to 1 second */
+  transition: opacity 1s ease; /* Increased duration to 1 second */
 }
 
 .left-container .section.animate {
   opacity: 1;
-  transform: translateY(0);
 }
 
 
