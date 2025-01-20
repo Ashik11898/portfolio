@@ -126,6 +126,24 @@ export const RESUME_JSON= {
 export const FIELDS=[
   {id:1,type:"text",placeholder:"Your Name",label:"Name",required:true},
   {id:2,type:"email",placeholder:"Your@email.com",label:"Email",required:true},
-
 ]
+export const INITIAL_RESUME_FIELDS = {
+  technical_skills: "",
+  experience: [{ company: "", location: "", role: "", duration: "" ,projects:[{
+    name: "",
+    responsibilities: "",
+    technologies: "",
+  }]}],
+  education: [{ degree: "", institution: "", duration: "" }],
+  personal: {
+    name: "",
+    experience: "",
+    one_line: "",
+    role: "",
+    role_heading: "",
+  },
+
+}
+
   
+

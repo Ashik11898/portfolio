@@ -31,7 +31,9 @@
     grid-template-columns: 300px 366px;
     gap: 40px;
     height: 240px;
-    margin-top: 50px;
+    margin-top: 50px; 
+    font-size: clamp(16px, 2.5vw, 25px);
+    font-weight: 600;
     animation: fadeIn 1s ease-out 0.5s forwards;
   }
   
@@ -39,7 +41,8 @@
     border-radius: 15px;
     background: var(--theme-color-contrast) url("../svg/lines1.svg");
     opacity: 0;
-    animation: fadeIn 1s ease-out 1.5s forwards;
+    color:var(--theme-color-light);
+    animation: fadeIn 1s ease-out 1.5s forwards; 
   }
   
   .blog-box-right {
@@ -47,8 +50,11 @@
     background: var(--theme-color-contrast2) url("../svg/lines2.svg");
     opacity: 0;
     animation: fadeIn 1s ease-out 1.5s forwards;
+    cursor: pointer;
   }
-  
+  .blog-box-right > a{ color:var(--app-bgcolor);}
+
+
   /* Bounce-in animation */
   @keyframes bounceIn {
     0% {
@@ -73,4 +79,5 @@
       opacity: 1;
     }
   }
+
   

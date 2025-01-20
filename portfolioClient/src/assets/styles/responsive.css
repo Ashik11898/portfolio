@@ -14,8 +14,11 @@
         float: left;
     }
     .load-pages {max-width: 100%;}
-    .blog-box {grid-template-columns: 1fr 1fr; /* Two equal columns */
-      gap: 20px; }
+    .blog-box {
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+      gap: 20px;
+      
+     }
 
     .left-container {
       margin-left: 0;

@@ -1,13 +1,17 @@
 import React,{useState,useEffect} from 'react'
+import { useNavigate } from 'react-router-dom';
 import { FiHome } from "react-icons/fi";
 import { LuFolder } from "react-icons/lu";
 import { FiBriefcase } from "react-icons/fi";
 import { TbTool } from "react-icons/tb";
 import { LiaPhoneSolid } from "react-icons/lia";
+import { IoMdLogIn } from "react-icons/io";
+import { BiEdit } from "react-icons/bi";
 
-const NavbarSection = ( {onScrollToSection,currentComponent }) => {
+const NavbarSection = ( {onScrollToSection,currentComponent,showInputScreen }) => {
 
   const [selectedIcon, setSelectedIcon] = useState('blog');
+  const navigate =useNavigate();
 
   useEffect(() => {
     // Find the key where the value is true
@@ -20,12 +24,17 @@ const NavbarSection = ( {onScrollToSection,currentComponent }) => {
     }
   }, [currentComponent]);
 
-
-
-
   const handleIconClick = (icon) => {
-    setSelectedIcon(icon);
-    onScrollToSection(icon)
+    if(icon !== "login"){
+      setSelectedIcon(icon);
+      onScrollToSection(icon)
+      
+    }
+    else{
+      navigate("/login")
+    }
+   
+   
     
   };
 
@@ -36,8 +45,6 @@ const NavbarSection = ( {onScrollToSection,currentComponent }) => {
     />
   );
 
-
-
   return (
     <div className='navbar-parent'>
       <div className="navbar-box">
@@ -46,6 +53,10 @@ const NavbarSection = ( {onScrollToSection,currentComponent }) => {
         {renderIcon(FiBriefcase, 'projects')}
         {renderIcon(TbTool, 'experience')}
         {renderIcon(LiaPhoneSolid, 'form')}
+        {!showInputScreen && renderIcon(IoMdLogIn , 'login')}
+        {showInputScreen && renderIcon(BiEdit , 'edit')}
+
+        
       </div>
     </div>
   );

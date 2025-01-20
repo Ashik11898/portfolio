@@ -7,17 +7,21 @@
   --app-bgcolor: #000;
 }
 
+body{
+  display: unset;
+}
 
 .app-parent{
   background-color: var(--app-bgcolor);
-  margin: 0;
+  /* margin: 0; */
   width: 100%;
-  position: absolute;
+  height: 100%;
+  /* position: absolute; */
   display: flex;
   justify-content: center;
   color: var(--theme-color-light);
-  top:0;
-  left:0;
+  /* top:0;
+  left:0; */
   padding: 0px 10px 150px;
   box-sizing: border-box;
   font-size: 16px;
@@ -33,6 +37,10 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.centerCss_text{
+  text-align: center;
 }
 
 /* .section-space{
@@ -60,6 +68,10 @@ input{
   gap: 100px;
   margin: 140px 0 0 0;
 }
+.popupVisible{
+  display: none !important;
+}
+
 .left-container{
   width: calc(100% - 440px);
   margin-left: 440px;
@@ -260,4 +272,33 @@ textarea{
   font-weight: 600;
   margin-top: 21px;
   color: var(--theme-color-light);
+}
+
+/* popup-container */
+.popup-container {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: var(--app-bgcolor); 
+  top: 0;
+  left: 0;
+  z-index: 98; /* Ensure it overlays other content */
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.popup-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: -1; /* Place it behind the popup content */
+}
+
+.popup-container >.close-icon{
+  float: right;
+  cursor: pointer;
 }
