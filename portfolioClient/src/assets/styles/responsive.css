@@ -28,6 +28,7 @@
     }
     .list-card {width: 100%;display: flex;flex-direction: column;}
     .list-text-block{text-align: center;}
+    .footer-container {justify-content: center;}
    
 }
 

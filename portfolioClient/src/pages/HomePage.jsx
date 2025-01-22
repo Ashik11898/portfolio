@@ -18,7 +18,7 @@ function HomePage({ showPopup, showInputScreen }) {
     { Component: ProjectsPage, id: "projects" },
     { Component: ExperiencePage, id: "experience" },
     { Component: FormPage, id: "form" },
-   
+    { Component: FooterSection, id: "footer" },
     ];
 
     const handleScrollToSection = (id) => {
