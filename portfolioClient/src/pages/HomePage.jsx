@@ -38,7 +38,7 @@ function HomePage({ showPopup, showInputScreen }) {
                 [entry.target.id]: entry.isIntersecting,
             }));
             });
-        }, { threshold: 0.3 });
+        }, { threshold: 0.2 });
     
         sectionRefs.current.forEach((ref) => observer.observe(ref));
         return () => observer.disconnect();
