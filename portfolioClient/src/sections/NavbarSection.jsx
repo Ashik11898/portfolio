@@ -53,8 +53,8 @@ const NavbarSection = ( {onScrollToSection,currentComponent,showInputScreen }) =
         {renderIcon(FiBriefcase, 'projects')}
         {renderIcon(TbTool, 'experience')}
         {renderIcon(LiaPhoneSolid, 'form')}
-        {!showInputScreen && renderIcon(IoMdLogIn , 'login')}
-        {showInputScreen && renderIcon(BiEdit , 'edit')}
+        {/* {!showInputScreen && renderIcon(IoMdLogIn , 'login')}
+        {showInputScreen && renderIcon(BiEdit , 'edit')} */}
 
         
       </div>

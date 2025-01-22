@@ -34,9 +34,14 @@
   /* Animation for the .devcard-image */
   .devcard-image {
     height: 284px;
-    background-color: var(--theme-color-contrast);
+    /* background-color: var(--theme-color-contrast); */
     border-radius: 16px;
     animation: fadeIn 1s ease-out 0.5s forwards;
+  }
+
+  .devcard-image >img{
+    border-radius: 50%;
+    height: 230px;
   }
   
   .dev-name {

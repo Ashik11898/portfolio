@@ -4,13 +4,19 @@ const ContentList = ({data}) => {
   let {company,role,duration,projects,location}=data
   // const allTechnologies = projects.flatMap(company => company.technologies);
   const allResponsibility = projects.flatMap(company => company.responsibilities);
+  const projectName = projects.flatMap(project => project.name);
+  const Projects = projects.map((data,ind)=>(
+                  <div key={ind}>
+                    <div className='experince-role centerCss_text' style={{color:"#fff",marginTop:"20px"}}>{data.name}</div>
+                    <ul className='experince-list'>{data.responsibilities.map((data, index) => (<li key={index}>{data}</li>))}</ul>
+                  </div>))
 
     
   return (
     <div className='experince-parent'>
         <div className='experince-company'>{company}</div>
         <div className='experince-role'>{role}</div>
-        <ul className='experince-list'>{allResponsibility.map((data, index) => (<li key={index}>{data}</li>))}</ul>
+        <>{Projects}</>
         <div className='working-period'>{duration} - <b>{location}</b></div> 
         {/* <>
             <b>Technologies</b>

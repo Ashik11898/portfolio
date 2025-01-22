@@ -7,12 +7,11 @@ import { INITIAL_RESUME_FIELDS } from '../constants';
 
 
 const InputScreenPage = ({ data }) => {
+
   const [formData, setFormData] = useState(data);
   const navigate = useNavigate()
 
-  useEffect(()=>{
-    window.scrollTo(0, 0);
-  },[])
+  useEffect(()=>{window.scrollTo(0, 0);},[])
 
   const handleChange = (e, section, index, key, nestedIndex = null, nestedKey = null) => {
     const value = e.target.value;

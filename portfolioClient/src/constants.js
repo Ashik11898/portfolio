@@ -13,11 +13,11 @@ export const RESUME_JSON= {
         "projects":[{
           "name":"Mautourco-B2B",
           "responsibilities": [
-            "Developed responsive, cross-browser compatible product",
-            "Involved in Sprint Planning, estimation, and PR approvals",
-            "Implemented Google Maps API for live tracking and route history",
-            "Optimized page load time using react-query caching",
-            "Using Redux thunk for Global state management"
+            "Developed a B2B travel booking platform for seamless agency and client reservations.",
+            "Enabled internal user functionality for managing bookings on behalf of agencies.",
+            "Integrated a notification system for automated task alerts across departments.",
+            "Designed a user-centric interface to enhance booking management and stakeholder communication.",
+            "Improved operational efficiency and client satisfaction through streamlined processes.",
           ],
           "technologies": ["Typescript", "React", "Redux", "React-Query", "MUI", "SCSS"]
         }],
@@ -27,15 +27,72 @@ export const RESUME_JSON= {
         "company": "TATA ELXSI",
         "location": "India",
         "role": "UI DEVELOPER",
-        "duration": "JAN 2023 - JULY 2023",
+        "duration": "JAN 2022 - JULY 2023",
         "projects": [
           {
             "name": "Truckonnect",
             "responsibilities": [
-              "Developed cross-browser compatible product",
-              "Implemented Google Maps API and optimized performance"
+              "Delivered responsive, cross browser compatible product by gathering requirements from PM/PO team",
+              "Involved in Sprint Planning and provided proper estimates for the requirements",
+              "Responsible for implementing Secure code with industry standards for the product and responsible for PR approvals for the front-end code base",
+              "Implemented Google Maps API and Google Analytics in the product",
+              "Using Google Maps for Live tracking the current locations of the truck and implemented features for viewing the history of a truck’s route.",
+              "Reduced page load time using Caching concepts by using react-query for optimal user perform",
             ],
             "technologies": ["Javascript", "React", "Redux", "Node"]
+          }
+        ]
+      },
+
+      {
+        "company": "GP STRATEGIES INDIA PVT LTD",
+        "location": "India",
+        "role": "E-LEARNING DEVELOPER",
+        "duration": "JULY 2019 - DEC 2021",
+        "projects": [
+          {
+            "name": "Ralph Lauren",
+            "responsibilities": [
+              "Proficient in creating web pages as per client’s design." ,
+              "Developing audio synchronization with text and animation",
+              "Developing click and drag-drop games. ",
+              "Extensively worked on animation related interaction using jQuery without plugins.",
+              "Have extensive experience in designing and development of UI for Mobile/iPad device",
+            ],
+            "technologies": ["HTML", "CSS", "JavaScript", "jQuery"]
+          },
+          {
+            "name": "Rolls-Royce",
+            "responsibilities": [
+              "ROLLS - ROYCE - Rolls-Royce Motor Cars Limited is a British Luxury automobile maker. We developed an e learning Project for their employees to learn about their companyproductivity, safety measures and show some demo How to handle their company tools .", 
+              "Proficient in creating web pages as per client’s design." ,
+              "Developing audio synchronization with text and animation",
+              "Developing click and drag-drop games. ",
+            ],
+            "technologies": ["HTML", "CSS", "JavaScript", "jQuery"]
+          }
+        ]
+      },
+
+
+
+      {
+        "company": "HCL TECHNOLOGIES",
+        "location": "India",
+        "role": "SENIOR FRONTEND DEVELOPER",
+        "duration": "FEB 2021 - JAN 2022",
+        "projects": [
+          {
+            "name": "RM Banking Application - CITI Bank",
+            "responsibilities": [
+              "Translated wireframes into high-quality, reusable code using HTML5 and CSS3.",
+              "Implemented custom business logic through Backbone while adhering to coding standards.",
+              "Developed responsive and cross-browser compatible web applications for RM users in the banking domain.",
+              "Conducted end-to-end unit testing for all modules to ensure functionality before handing over to the testing team.",
+              "Delivered seamless user experiences by ensuring UI/UX consistency and responsiveness across devices.",
+              "Prepared and maintained test scripts to support robust unit testing processes.",
+            ],
+            "technologies": ["HTML5", "CSS3", "Backbone"]
           }
         ]
       },
@@ -64,39 +121,9 @@ export const RESUME_JSON= {
           }
         ]
       },
-      {
-        "company": "HCL TECHNOLOGIES",
-        "location": "India",
-        "role": "SENIOR FRONTEND DEVELOPER",
-        "duration": "Project-based",
-        "projects": [
-          {
-            "name": "RM Banking Application - CITI Bank",
-            "responsibilities": [
-              "Translated wireframes into HTML/CSS code",
-              "Implemented custom logic using Backbone"
-            ],
-            "technologies": ["HTML5", "CSS3", "Backbone"]
-          }
-        ]
-      },
      
-      {
-        "company": "GP STRATEGIES INDIA PVT LTD",
-        "location": "India",
-        "role": "E-LEARNING DEVELOPER",
-        "duration": "JULY 2019 - JULY 2021",
-        "projects": [
-          {
-            "name": "Ralph Lauren",
-            "responsibilities": [
-              "Created web pages based on client design",
-              "Developed animations, audio sync, and interactive games"
-            ],
-            "technologies": ["HTML", "CSS", "JavaScript", "jQuery"]
-          }
-        ]
-      }
+     
+     
     ],
     "education": [
       {
@@ -117,7 +144,7 @@ export const RESUME_JSON= {
     ],
     "personal":{
         "name":"MOHAMED ASHIK",
-        "experience":"5.4",
+        "experience":"5.5",
         "one_line":"Building Seamless Frontend & Robust Backend with Modern JavaScript Technologies",
         "role":["React Developer","Web Developer","Frontend Developer","Full stack Developer","MERN Stack developer"],
         "role_heading":["Expert React & MERN Stack Developer: Crafting Scalable Frontend and Robust Backend for Dynamic Web Solutions."]

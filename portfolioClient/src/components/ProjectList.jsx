@@ -1,7 +1,7 @@
 import React from 'react'
 import img1 from "../assets/images/Mautourco-B2B.png"
 import img2 from "../assets/images/truckonnect.png"
-import img3 from "../assets/images/bayer.png"
+import img3 from "../assets/images/Ralph.jpg"
 import ContentList from './ContentList'
 
 
