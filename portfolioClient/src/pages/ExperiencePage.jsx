@@ -4,7 +4,7 @@ import { RESUME_JSON } from '../constants'
 import ProjectList from '../components/ProjectList'
 
 const ExperiencePage = () => {
-  const HEADING = ["5.4 years of", "Experience"]
+  const HEADING = ["5.5 years of", "Experience"]
  const list = RESUME_JSON.experience
   return (
     <>
