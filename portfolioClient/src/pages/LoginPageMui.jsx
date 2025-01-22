@@ -5,8 +5,9 @@ import { useNavigate } from "react-router-dom";
 
 const LoginPageMui = ({setShowInputScreen,closePopup}) => {
   const [formData, setFormData] = useState({ email: "", password: "" });
-  const [errors, setErrors] = useState({ email: "", password: "" });
+  const [errors, setErrors] = useState({ email: "", password: "",apiError:"" });
   const navigate = useNavigate()
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -39,11 +40,15 @@ const LoginPageMui = ({setShowInputScreen,closePopup}) => {
         const response = await axios.post('http://localhost:5000/portfolio_api/login', formData);
         let {_id}=response.data?.userdata
         localStorage.setItem("userid",_id)
-        // setShowInputScreen(true)
         navigate("/edit-screen")
         console.log('Response:', response.data.userdata);
       } catch (error) {
-        console.error('Error:', error);
+        console.error('Error:', error.response.data.message);
+        setErrors((prevState) => ({
+          ...prevState,
+          apiError:error.response.data.message,
+         
+        }));
         localStorage.removeItem("userid")
       }
 
@@ -103,6 +108,7 @@ const LoginPageMui = ({setShowInputScreen,closePopup}) => {
             helperText={errors.password}
             
           />
+          <div style={{color:"#EE4B2B"}}>{errors.apiError}</div>
           <Button
             type="submit"
             fullWidth

@@ -129,11 +129,19 @@ export const FIELDS=[
 ]
 export const INITIAL_RESUME_FIELDS = {
   technical_skills: "",
-  experience: [{ company: "", location: "", role: "", duration: "" ,projects:[{
-    name: "",
-    responsibilities: "",
-    technologies: "",
-  }]}],
+  experience: [
+    { 
+      company: "", 
+      location: "",
+       role: "", 
+       duration: "" ,
+       projects:[{
+          name: "",
+          responsibilities: "",
+          technologies: "",
+      }]
+    }
+  ],
   education: [{ degree: "", institution: "", duration: "" }],
   personal: {
     name: "",
