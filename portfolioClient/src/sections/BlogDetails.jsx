@@ -8,7 +8,7 @@ const BlogDetails = () => {
   let {role,role_heading,experience}= RESUME_JSON.personal
   return (
     <div className='blog-parent'>
-        <TitleComponent text={role[2]}/>
+        <TitleComponent text={role[4]}/>
         <ContentComponent content={role_heading}/>
         <div className='experience-parent'>
         <div className='experience-box'>
