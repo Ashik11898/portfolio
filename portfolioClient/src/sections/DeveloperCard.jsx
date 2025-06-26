@@ -4,7 +4,7 @@ import { LuTwitter } from "react-icons/lu";
 import { MdOutlineMail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { RESUME_JSON } from '../constants';
-import ownerImg from "../assets/images/DSC_0195.jpg"
+import ownerImg from "../assets/images/owner.jpg"
 
 const DeveloperCard = () => {
 
