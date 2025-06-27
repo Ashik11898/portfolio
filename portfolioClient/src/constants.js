@@ -144,16 +144,20 @@ export const RESUME_JSON= {
     ],
     "personal":{
         "name":"MOHAMED ASHIK",
-        "experience":"5.8",
+        "experience":"5.7",
         "one_line":"Building Seamless Frontend & Robust Backend with Modern JavaScript Technologies",
         "role":["React Developer","Web Developer","Frontend Developer","Full stack Developer","MERN-Stack developer"],
         "role_heading":["Expert React & MERN Stack Developer: Crafting Scalable Frontend and Robust Backend for Dynamic Web Solutions."]
     }
 }
+
+
 export const FIELDS=[
   {id:1,type:"text",placeholder:"Your Name",label:"Name",required:true},
   {id:2,type:"email",placeholder:"Your@email.com",label:"Email",required:true},
 ]
+
+
 export const INITIAL_RESUME_FIELDS = {
   technical_skills: "",
   experience: [
